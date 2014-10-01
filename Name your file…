@@ -1,0 +1,47 @@
+**Scope of Work**
+
+**Introduction**
+
+UCAQ are starting an Alfresco project where one of the major aims to digitally store old, archived and other hard file documents stored in filing cabinets throughout the company into Alfresco. These documents need to:
+
+1. 1)Be classified
+2. 2)Have metadata added
+3. 3)Stored into an appropriate folder structure
+
+A large number of these documents are stored over an extended time period in different locations throughout the company; therefore an automated workflow system needs to be created to manage this process.
+
+**Online Alfresco Workflow**
+
+- A default folder needs to be created to accept these incoming documents.
+- A UCAQ workgroup will be set up to manage these incoming documents. Therefore an Alfresco Project Group needs to be created for this purpose and populated with individuals in the project team.
+- A Project Management Group also needs to be created to accept escalated workflow requiring a management decision.
+- An EMS Escalation Group also needs to be created to accept escalated workflow from Management escalations that aren't able to be resolved.
+- It has been suggested that a unique task number/identifier needs to be assigned. Further discussion is needed to confirm the necessity of this function. \*
+- The status of each task should be tracked through the Aspects of the file as it proceeds through the workflow. \*
+- Once a new file is sent to/saved into the default folder a new Alfresco automated workflow needs to be activated.
+- A task will be automatically generated and assigned in a "round-robin" fashion to each member in the Project Group with a status of "new" and will appear in their "My Tasks" list \*
+- Once the task has been opened it needs to automatically update the Aspect to "in progress" with the assigned user of the task.
+- Staff will then determine the classification of the document, add appropriate metadata and save the file in the appropriate folder. Once this is done the status needs to be updated to "closed" and ends the workflow. 
+- If they are working with a more complex document type that requires a second review, the status stays "in progress" until the second reviewer submits the task at which time the status is updated to "closed".
+- If staff are unable to determine classification / metadata or where to store the file, they need to have the ability to escalate the task, along with an explanation as to their issue to a Management group to make a determination.
+- Once the task is sent to the Management Group the task list will be updated to "Management Escalation". The Manager can then determine what needs to be done & update the Issue field to explain the decision.
+- Once the Manager has decided how to handle the escalation, it needs to be sent back to the project team to complete processing with a status of "escalation returned".
+- If the Manager is unable to make a determination on what to do with the file, an option needs to be added for a further escalation to Evolution Marketing. The status needs to be updated to "EMS Escalation".
+- Evolution Marketing will then make a determination and send back to the project team to complete processing with a status of "escalation returned" and update the issue field appropriately. 
+- If Evolution Marketing are unable to make a determination according to the current standards / policies, EMS will then update the appropriate standard or policy to take account of the new document / document type or situation. The document will then be sent back to the project team to complete processing with a status of "escalation returned" along with an explanation as to how the file will now be processed.
+- A diagram of the proposed workflow has been produced below.
+
+**FORMS**
+
+- First Review & Second Review forms should be identical except for the heading on the form (ie: First Review forms to show "First Review", Second Review forms to show "Second Review" on the header)
+
+- Management & EMS Escalation Forms are identical except for:
+  - Heading
+  - The escalation button will only sit on the Management Escalation Form as it is not possible to escalate further from EMS Escalation.
+
+Questions………..
+
+- Do we need to create a unique task number/identifier ?
+- (Does a new Aspect need to be created ? AND are there Aspects that need to be automatically added to files in this workflow ?)
+- We need to add document types…but how ?
+- Can we add a new "Task Type" in the All Tasks dashlet ?
